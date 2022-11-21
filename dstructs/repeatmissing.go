@@ -10,17 +10,15 @@ func FindFirstNonRepeatingChar() {
 	rest1 := make(map[string]int)
 
 	for _, v := range strarr {
-		rest1[string(v)] += 1
-	}
-	fmt.Println(rest1)
-	var alpha string
-	for key, v := range rest1 {
-		if v == 1 {
-			alpha = key
+		key := string(v)
+		if _, ok := rest1[key]; ok {
+			fmt.Println("Found", key)
 			break
 		}
+		rest1[key] += 1
 	}
-	fmt.Println(alpha)
+
+	fmt.Println(rest1)
 }
 
 func countRepeatedNumsWithoutMap() {
