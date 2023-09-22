@@ -14,7 +14,6 @@ func removeDuplicateFromString() {
 		if !strings.Contains(res, string(str[i])) {
 			res += fmt.Sprintf("%c", str[i])
 		}
-
 	}
 	fmt.Println(res) //rayz
 }
@@ -29,13 +28,13 @@ func removeDuplicateWithSpecialCharacter() {
 		}
 
 	}
-	fmt.Println(res) //rayz
+	fmt.Println(res) //ray♄z
 }
 
 //Assumes no special character
 //**Removing adjacent duplicate characters from string
 func removeAdjacentDuplicateFromString() {
-	str := "rayaaz"
+	str := "rayaazr"
 	var res string
 	for i := 0; i < len(str); i++ {
 		if len(res) > 0 {

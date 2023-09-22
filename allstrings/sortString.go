@@ -7,7 +7,7 @@ import (
 
 //without using sort function
 func sortAlphas() {
-	intStr := "eWotQiDa"   //immutable
+	intStr := "zWotQiDa"   //immutable
 	str1 := []rune(intStr) //mutable to avaoid error on line 18
 	//expectedd aDeioQtW
 

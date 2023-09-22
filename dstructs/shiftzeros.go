@@ -2,7 +2,8 @@ package dstructs
 
 import "fmt"
 
-// Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+// Given an integer array nums, move all 0's to the end of it while maintaining the relative order of
+//the non-zero elements.
 //
 // Example:
 // Input: nums = [0,3,0,1,12]
